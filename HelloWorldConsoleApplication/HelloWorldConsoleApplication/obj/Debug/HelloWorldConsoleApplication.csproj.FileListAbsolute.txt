@@ -1,0 +1,6 @@
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\HelloWorldConsoleApplication\HelloWorldConsoleApplication\bin\Debug\HelloWorldConsoleApplication.exe.config
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\HelloWorldConsoleApplication\HelloWorldConsoleApplication\bin\Debug\HelloWorldConsoleApplication.exe
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\HelloWorldConsoleApplication\HelloWorldConsoleApplication\bin\Debug\HelloWorldConsoleApplication.pdb
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\HelloWorldConsoleApplication\HelloWorldConsoleApplication\obj\Debug\HelloWorldConsoleApplication.csprojResolveAssemblyReference.cache
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\HelloWorldConsoleApplication\HelloWorldConsoleApplication\obj\Debug\HelloWorldConsoleApplication.exe
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\HelloWorldConsoleApplication\HelloWorldConsoleApplication\obj\Debug\HelloWorldConsoleApplication.pdb
