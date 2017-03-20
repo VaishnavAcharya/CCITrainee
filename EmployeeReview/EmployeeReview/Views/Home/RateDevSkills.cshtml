@@ -1,0 +1,17 @@
+﻿@model  EmployeeReview.Models.EmployeeModel
+<p><b>Developer Skills :</b></p> <br />
+<div id="UpdateDiv">
+    @Model.EmpDevSkills
+   </div>
+@using (Ajax.BeginForm("DevSkillType", "Home", new AjaxOptions { HttpMethod = "Post", InsertionMode = InsertionMode.Replace, UpdateTargetId = "UpdateDiv" }))
+{     @Html.HiddenFor(m => m.EmpDevSkills)
+    <div style="margin-left:.5cm">
+        @Html.RadioButtonFor(m => m.EmpDevSkillScale, "Unsatisfactory")@Html.Label("Unsatisfactory")<br />
+        @Html.RadioButtonFor(m => m.EmpDevSkillScale, "NeedsImprovement")@Html.Label("Needs Improvement")<br />
+        @Html.RadioButtonFor(m => m.EmpDevSkillScale, "MeetsExpectations")@Html.Label("Meets Expectations")<br />
+        @Html.RadioButtonFor(m => m.EmpDevSkillScale, "AboveExpectations")@Html.Label("Above Expectations")<br />
+        @Html.RadioButtonFor(m => m.EmpDevSkillScale, "Outstanding")@Html.Label("Outstanding")<br />
+    </div>
+    <input type="submit" value="Next"  />
+}
+

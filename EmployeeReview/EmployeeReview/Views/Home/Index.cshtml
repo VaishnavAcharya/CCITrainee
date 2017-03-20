@@ -1,0 +1,32 @@
+﻿@model  EmployeeReview.Models.EmployeeModel
+
+<h1>Enter the following details :</h1>
+@using (Html.BeginForm("RateEmployeeSkills", "Home", FormMethod.Post, new { role = "form" }))
+{
+    <div class="col-md-7">
+        <table>
+            <tr>
+                <td>
+                    @Html.Label("EmpName", "Employee Name:")
+                </td>
+                <td>
+                    @Html.TextBoxFor(m=>m.EmpName, new { @class = "form-control" })
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.Label("EmpDesignation","Employee Designation:")
+                </td>
+                <td>
+                    
+                    @Html.DropDownListFor(m => m.EmpDesignation, new SelectList(Enum.GetValues(typeof(EmployeeReview.Models.EmployeeModel.Designation)),"Select Designation"))
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" class="btn btn-primary" value="Submit"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+}
