@@ -13,7 +13,7 @@ namespace EmployeeReview.Models
         public string EmpName { get; set; }
         public Designation EmpDesignation { get; set; }
         public DevSkillScale EmpDevSkillScale { get; set; }
-        public static List<EmployeeModel> EmpDetails { get; set; }
+        //public static List<EmployeeModel> EmpDetails { get; set; }
         public DevSkills EmpDevSkills { get; set; }
 
         public enum DevSkills
@@ -41,9 +41,9 @@ namespace EmployeeReview.Models
             Outstanding
         }
 
-        static EmployeeModel()
-        {
-            EmpDetails = new List<EmployeeModel> { };
-        }
+        //static EmployeeModel()
+        //{
+        //    EmpDetails = new List<EmployeeModel> { };
+        //}
     }
 }
