@@ -1,0 +1,109 @@
+﻿
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script lang="ja" type="text/javascript">
+    $(document).ready(GetDetails());
+    function GetDetails() {
+        $("#txtListInput").val("");
+        $("#tblList").empty();
+        $.ajax({
+            type: "GET",
+            url: "http://localhost:55579/api/ToDoAPI", //URI
+
+            dataType: "json",
+            success: function (data) {
+                debugger;
+                var datavalue = data;
+                var myJsonObject = datavalue;
+                contentType: "application/json";
+
+                $.each(myJsonObject, function (i, mobj) {
+                    $("#tblList").append('<tr><td>' + mobj.TaskName + '</td><td>' + '<input type="button" value="Edit" onclick="EditDetails(' + mobj.Id + ',\'' + mobj.TaskName + '\')"  />' + '</td><td>' + '<input type="button" value="Delete" onclick="DeleteDetails(' + mobj.Id + ')" />' + '</td></tr>');
+
+                });
+
+            },
+            error: function (xhr) {
+                alert(xhr.responseText);
+            }
+        });
+
+
+
+
+    }
+
+
+
+    function AddDetails() {
+        var TaskName = JSON.stringify(($("#txtListInput").val()))
+        $.ajax(
+        {
+            type: "POST", //HTTP POST Method
+
+            url: "http://localhost:55579/api/ToDoAPI",
+            contentType: "application/json; charset=utf-8",
+            data: TaskName,
+           
+            dataType: "json",
+
+        });
+
+
+    }
+
+    function DeleteDetails(Id) {
+
+        $.ajax({
+
+            type: 'DELETE',
+            url: "http://localhost:55579/api/ToDoAPI" + "/" + Id,
+
+
+        });
+    }
+
+    function EditDetails(Id, TaskName) {
+        var TaskId = Id;
+        $("#btnAdd").hide();
+        $("#btnSaveChanges").show();
+
+        $("#txtListInput").val(TaskName);
+        $("#hiddenTaskId").val(Id);
+
+    }
+
+    function SaveChanges() {
+        $("#btnAdd").show();
+        $("#btnSaveChanges").hide();
+        var Id = $("#hiddenTaskId").val();
+        var TaskName = JSON.stringify(($("#txtListInput").val()))
+        $.ajax({
+            type: 'PUT',
+            url: "http://localhost:55579/api/ToDoAPI" + "/" + Id,
+            contentType: "application/json; charset=utf-8",
+            data: TaskName,
+
+            dataType: "json",
+        });
+
+
+    }
+</script>
+
+<div>
+    <h4>Enter the task</h4>
+    <input type="text" id="txtListInput" />
+    <input type="hidden" id="hiddenTaskId" />
+    <input type="button" onclick="AddDetails()" id="btnAdd" value="Add" />
+    <input type="button" value="Save Changes" style="display:none" id="btnSaveChanges" onclick="SaveChanges()" />
+    <input type="button" value="Refresh" onclick="GetDetails()" />
+
+
+    <h5><b>To Do List</b></h5>
+    <Table id="tblList"></Table>
+
+</div>
+<tr>
+    <td></td>
+</tr>
