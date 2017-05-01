@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MvcMusicStore.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,7 +13,7 @@ namespace MVCMusicStore
     {
         protected void Application_Start()
         {
-            //System.Data.Entity.Database.SetInitializer(new MvcMusicStore.Models.SampleData());
+            System.Data.Entity.Database.SetInitializer(new SampleData());
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

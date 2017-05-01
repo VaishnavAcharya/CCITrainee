@@ -1,0 +1,6 @@
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\ConsoleApplicationProject\ConsoleApplicationProject\bin\Debug\ConsoleApplicationProject.exe.config
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\ConsoleApplicationProject\ConsoleApplicationProject\obj\Debug\ConsoleApplicationProject.csprojResolveAssemblyReference.cache
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\ConsoleApplicationProject\ConsoleApplicationProject\bin\Debug\ConsoleApplicationProject.exe
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\ConsoleApplicationProject\ConsoleApplicationProject\bin\Debug\ConsoleApplicationProject.pdb
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\ConsoleApplicationProject\ConsoleApplicationProject\obj\Debug\ConsoleApplicationProject.exe
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\ConsoleApplicationProject\ConsoleApplicationProject\obj\Debug\ConsoleApplicationProject.pdb

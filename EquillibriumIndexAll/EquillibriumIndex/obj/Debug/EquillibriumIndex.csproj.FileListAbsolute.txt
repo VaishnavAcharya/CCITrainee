@@ -1,0 +1,6 @@
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\EquillibriumIndex\EquillibriumIndex\bin\Debug\EquillibriumIndex.exe.config
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\EquillibriumIndex\EquillibriumIndex\bin\Debug\EquillibriumIndex.exe
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\EquillibriumIndex\EquillibriumIndex\bin\Debug\EquillibriumIndex.pdb
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\EquillibriumIndex\EquillibriumIndex\obj\Debug\EquillibriumIndex.csprojResolveAssemblyReference.cache
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\EquillibriumIndex\EquillibriumIndex\obj\Debug\EquillibriumIndex.exe
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\EquillibriumIndex\EquillibriumIndex\obj\Debug\EquillibriumIndex.pdb

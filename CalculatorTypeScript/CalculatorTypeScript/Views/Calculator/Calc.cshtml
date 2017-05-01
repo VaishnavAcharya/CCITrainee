@@ -1,0 +1,77 @@
+﻿
+
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="@Url.Content("~/Scripts/Calculator.js")" type="text/javascript"></script>
+
+
+
+<style>
+    html > /**/ body body {
+        /*background-image: url("Image/images.jpg");*/
+    }
+
+    html > /**/ body #d1 {
+        border: 1px solid black;
+        height: 340px;
+        width: 340px;
+    }
+</style>
+<br /><br /><br /><br /><br /><br /><br />
+<center>
+    <div id="d1">
+        @using (@Html.BeginForm("Index", "Calculator"))
+        {
+            <table style="height:25%;border:thick">
+                <tr>
+                    <td colspan="4">
+                        <center>
+                            <h2>My Calculator</h2>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">@Html.TextBox("txt", (string)ViewBag.result)</td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="b7" data-class="number" value="7" style="height:40px;width:75px" /></td>
+                    <td><input type="button" id="b8" data-class="number" value="8" style="height:40px;width:75px" /></td>
+                    <td><input type="button" id="b9" data-class="number" value="9" style="height:40px;width:75px" /></td>
+                    <td><input type="button" id="div" value="/" data-class="operation" style="height:40px;width:75px" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="b4" data-class="number" value="4" style="height:40px;width:75px" /></td>
+                    <td><input type="button" id="b5" data-class="number" value="5" style="height:40px;width:75px" /></td>
+                    <td><input type="button" id="b6" data-class="number" value="6" style="height:40px;width:75px" /></td>
+                    <td><input type="button" id="multy" value="*" data-class="operation" style="height:40px;width:75px" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="b1" data-class="number" value="1" style="height:40px;width:75px" /></td>
+                    <td><input type="button" id="b2" data-class="number" value="2" style="height:40px;width:75px" /></td>
+                    <td><input type="button" id="b3" data-class="number" value="3" style="height:40px;width:75px" /></td>
+                    <td><input type="button" id="sub" value="-" data-class="operation" style="height:40px;width:75px" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="b0" data-class="number" value="0" style="height:40px;width:75px" /></td>
+                    <td><input type="button" id="dot" value="." data-class="operation" style="height:40px;width:75px" /></td>
+                    <td><input type="button" id="add" value="+" data-class="operation" style="height:40px;width:75px" /></td>
+                    <td><input type="submit" id="eq" value="=" style="height:40px;width:75px" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" id="ce" value="CE" style="height:40px;width:155px" />
+                    </td>
+                    <td colspan="2">
+                        <input type="reset" id="re" value="Clear" style="height:40px;width:155px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <center>
+                            <h2>Result : @ViewBag.result</h2>
+                        </center>
+                    </td>
+                </tr>
+            </table>
+        }
+    </div>
+</center>

@@ -11,6 +11,6 @@ namespace ToDoAppFromScratch.ViewModels.ToDo
         public int Id { get; set; }
         public string TaskName { get; set; }
 
-        public List<Tasks> TaskTable { get; set; }
+        public IEnumerable<Tasks> TaskTable { get; set; }
     }
 }

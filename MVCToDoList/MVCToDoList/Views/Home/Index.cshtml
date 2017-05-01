@@ -1,0 +1,58 @@
+﻿@model MVCToDoList.Models.ListModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="navbar-form">
+    @*<h1>ASP.NET</h1>
+        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+        <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
+    <div>
+    @using (Html.BeginForm("AddItem", "Home", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form" }))
+    {
+        @Html.HiddenFor(m => m.id)
+        <div class="col-md-7">
+            @Html.TextBoxFor(m => m.Item, new { @class = "form-control" })
+            <input type="submit" class="btn-btn-primary" value="Add" />
+
+
+
+
+            <br /><br/>
+            <div class="list-group">
+
+                <ul >
+                    @foreach (var item in Model.itemsTable )
+                    {
+                        <li class="list-group-item">
+                            @Html.Label(item.Item)
+                            <input type="button" class="btn btn-danger" style="float: right;padding: 6px 27px !important;" value="Edit" onclick="location.href='@Url.Action("EditItem", "Home", new { id = @item.id })'" />
+                            <input type="button" class="btn btn-success" style="float: RIGHT" value="Remove" onclick="location.href='@Url.Action("RemoveItem", "Home", new { id = @item.id })'" />
+
+                        </li>
+                    }
+                </ul>
+
+            </div>
+        </div>
+    }
+        </div>
+    
+    @using (Ajax.BeginForm("SearchItem", "Home", new AjaxOptions { HttpMethod = "Post", InsertionMode = InsertionMode.Replace, UpdateTargetId = "UpdateDiv" }))
+
+    {  <div class="for">
+        @Html.TextBoxFor(m => m.Item, new { @class = "form-control" })
+        <input type="submit" value="Search By Name" />
+    </div>
+    
+    <br/><br/><br />
+    }
+    <div id="UpdateDiv">
+
+    </div>
+   
+</div>
+
+
+
+

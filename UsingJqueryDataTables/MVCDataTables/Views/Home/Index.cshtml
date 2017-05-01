@@ -1,0 +1,49 @@
+﻿
+
+<div style="width:90%; margin:0 auto">
+    <table id="tblCustomers">
+        <thead>
+            <tr>
+                <th>Company Name</th>
+                <th>Contact Name</th>
+                <th>City</th>
+                <th>PostalCode</th>
+                <th>Country</th>
+                <th>Phone</th>
+
+
+            </tr>
+        </thead>
+    </table>
+</div>
+
+<link href="//cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+
+    <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+<script src="//cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#tblCustomers").DataTable({
+                "processing": true, // for show progress bar
+                "serverSide": true, // for process server side
+                "filter": false, // this is for disable filter (search box)
+                "orderMulti": false, // for disable multiple column at once
+                "ajax": {
+                    "url": "/Home/LoadData",
+                    "type": "POST",
+                    "datatype": "json"
+                },
+                "columns": [
+                    { "data": "CompanyName", "name": "CompanyName", "autoWidth": true },
+                        { "data": "ContactName", "name": "ContactName", "autoWidth": true },
+                        { "data": "City", "name": "City", "autoWidth": true },
+                         { "data": "PostalCode", "name": "PostalCode", "autoWidth": true },
+                        { "data": "Country", "name": "Country", "autoWidth": true },
+                           { "data": "Phone", "name": "Phone", "autoWidth": true }
+
+                ]
+            });
+        });
+    </script>
+

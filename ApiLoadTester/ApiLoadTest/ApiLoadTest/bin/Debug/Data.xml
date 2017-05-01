@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table1>
+    <Url>aa</Url>
+    <Type>ss</Type>
+    <Payload>dd</Payload>
+    <HeaderName>ff</HeaderName>
+    <HeaderValue>gg</HeaderValue>
+  </Table1>
+  <Table1>
+    <Url>aa</Url>
+  </Table1>
+  <Table1>
+    <Url>aa</Url>
+    <Type>ss</Type>
+    <Payload>dd</Payload>
+    <HeaderName>ff</HeaderName>
+    <HeaderValue>gg</HeaderValue>
+  </Table1>
+  <Table1>
+    <Url>c</Url>
+    <Type>c</Type>
+    <Payload>c</Payload>
+    <HeaderName>c</HeaderName>
+    <HeaderValue>c</HeaderValue>
+  </Table1>
+  <Table1 />
+</NewDataSet>

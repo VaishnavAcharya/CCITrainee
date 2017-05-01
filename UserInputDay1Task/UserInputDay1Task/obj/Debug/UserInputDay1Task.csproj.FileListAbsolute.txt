@@ -1,0 +1,6 @@
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\UserInputDay1Task\UserInputDay1Task\bin\Debug\UserInputDay1Task.exe.config
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\UserInputDay1Task\UserInputDay1Task\bin\Debug\UserInputDay1Task.exe
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\UserInputDay1Task\UserInputDay1Task\bin\Debug\UserInputDay1Task.pdb
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\UserInputDay1Task\UserInputDay1Task\obj\Debug\UserInputDay1Task.csprojResolveAssemblyReference.cache
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\UserInputDay1Task\UserInputDay1Task\obj\Debug\UserInputDay1Task.exe
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\UserInputDay1Task\UserInputDay1Task\obj\Debug\UserInputDay1Task.pdb

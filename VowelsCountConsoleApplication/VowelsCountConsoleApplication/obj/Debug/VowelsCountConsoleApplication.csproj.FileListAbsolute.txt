@@ -1,0 +1,6 @@
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\VowelsCountConsoleApplication\VowelsCountConsoleApplication\bin\Debug\VowelsCountConsoleApplication.exe.config
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\VowelsCountConsoleApplication\VowelsCountConsoleApplication\bin\Debug\VowelsCountConsoleApplication.exe
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\VowelsCountConsoleApplication\VowelsCountConsoleApplication\bin\Debug\VowelsCountConsoleApplication.pdb
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\VowelsCountConsoleApplication\VowelsCountConsoleApplication\obj\Debug\VowelsCountConsoleApplication.csprojResolveAssemblyReference.cache
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\VowelsCountConsoleApplication\VowelsCountConsoleApplication\obj\Debug\VowelsCountConsoleApplication.exe
+c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\VowelsCountConsoleApplication\VowelsCountConsoleApplication\obj\Debug\VowelsCountConsoleApplication.pdb

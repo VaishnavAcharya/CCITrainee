@@ -55,3 +55,5 @@ c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\ToDoAppFromScrat
 c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\ToDoAppFromScratch\ToDoAppFromScratch\obj\Debug\ToDoAppFromScratch.csprojResolveAssemblyReference.cache
 c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\ToDoAppFromScratch\ToDoAppFromScratch\obj\Debug\ToDoAppFromScratch.dll
 c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\ToDoAppFromScratch\ToDoAppFromScratch\obj\Debug\ToDoAppFromScratch.pdb
+C:\Users\vaishnav.acharya\Documents\Visual Studio 2015\Projects\ToDoAppFromScratch\ToDoAppFromScratch\obj\Debug\ToDoAppFromScratch.Migrations.xyz.resources
+C:\Users\vaishnav.acharya\Documents\Visual Studio 2015\Projects\ToDoAppFromScratch\ToDoAppFromScratch\obj\Debug\ToDoAppFromScratch.csproj.GenerateResource.Cache

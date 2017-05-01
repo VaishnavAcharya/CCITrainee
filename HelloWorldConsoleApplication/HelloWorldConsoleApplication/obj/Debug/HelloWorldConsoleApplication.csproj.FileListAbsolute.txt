@@ -4,6 +4,3 @@ c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\HelloWorldConsol
 c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\HelloWorldConsoleApplication\HelloWorldConsoleApplication\obj\Debug\HelloWorldConsoleApplication.csprojResolveAssemblyReference.cache
 c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\HelloWorldConsoleApplication\HelloWorldConsoleApplication\obj\Debug\HelloWorldConsoleApplication.exe
 c:\users\vaishnav.acharya\documents\visual studio 2015\Projects\HelloWorldConsoleApplication\HelloWorldConsoleApplication\obj\Debug\HelloWorldConsoleApplication.pdb
-C:\Users\vaishnav.acharya\Documents\GitHub\CCITrainee\HelloWorldConsoleApplication\HelloWorldConsoleApplication\bin\Debug\HelloWorldConsoleApplication.exe.config
-C:\Users\vaishnav.acharya\Documents\GitHub\CCITrainee\HelloWorldConsoleApplication\HelloWorldConsoleApplication\obj\Debug\HelloWorldConsoleApplication.exe
-C:\Users\vaishnav.acharya\Documents\GitHub\CCITrainee\HelloWorldConsoleApplication\HelloWorldConsoleApplication\obj\Debug\HelloWorldConsoleApplication.pdb

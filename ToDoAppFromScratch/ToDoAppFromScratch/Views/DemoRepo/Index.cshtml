@@ -1,0 +1,28 @@
+﻿@model ToDoAppFromScratch.ViewModels.ToDo.ToDoViewModel
+@{
+    ViewBag.Title = "Index";
+}
+<h1>Add a Task</h1><br />
+@using (Html.BeginForm("AddEditItem", "DemoRepo", FormMethod.Post))
+{
+    @Html.HiddenFor(m => m.Id)
+    <div class="form-inline">
+        @Html.TextBoxFor(m => m.TaskName, new { @class = "form-control" })
+        <input type="submit" value="Submit" class="btn btn-primary" />
+    </div>
+    <br />
+
+    <p style="font-size:large">To do list</p>
+
+    foreach (var item in Model.TaskTable)
+    {
+        <ul class="list-group">
+            <li class="form-inline">
+                @Html.Label(item.TaskName,new { @class= "col-md-4" })
+                <input type="button" value="Edit" class="btn btn-success" onclick="location.href='@Url.Action("EditItem","DemoRepo",new {Id = @item.Id})'" />
+                <input type="button" value="Remove" class="btn btn-danger" onclick="location.href='@Url.Action("RemoveItem","DemoRepo",new { Id= @item.Id})'" />
+
+            </li>
+        </ul>
+    }
+}
